@@ -17,7 +17,19 @@ function App() {
   
   return (
     <>
-      
+      <div className="container">
+        <div className="row">
+          {posts.map((element) =>{
+            return (
+              <div className="col-3" key={element.id}>
+                <div className="card">
+                  {element.title}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </>
   )
 }
